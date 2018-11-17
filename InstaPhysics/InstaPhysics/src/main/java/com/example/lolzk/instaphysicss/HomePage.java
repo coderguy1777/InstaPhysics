@@ -10,12 +10,14 @@ public class HomePage extends AppCompatActivity {
     public Button button;
     public Button button2;
     public Button button3;
+    public Button button4;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         button = (Button) findViewById(R.id.buttonOptics);
         button2 = (Button) findViewById(R.id.buttonKinematics);
         button3 = (Button) findViewById(R.id.button3);
+        button4 = (Button) findViewById(R.id.buttonKinematics2);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +38,13 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMagnetismActivity();
+            }
+        });
+
     }
 
     public void openOpticsActivity() {
@@ -51,5 +60,11 @@ public class HomePage extends AppCompatActivity {
     public void openWaveActivity() {
         Intent opener3 = new Intent(this, Waves.class);
         startActivity(opener3);
+    }
+
+    public void openMagnetismActivity() {
+        Intent opener4 = new Intent(this, Magnetism.class);
+        startActivity(opener4);
+
     }
 }
