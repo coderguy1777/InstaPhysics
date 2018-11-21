@@ -16,6 +16,7 @@ public class HomePage extends AppCompatActivity {
     public Button button7;
     public Button button8;
     public Button button9;
+    public Button button10;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,7 @@ public class HomePage extends AppCompatActivity {
         button7 = (Button) findViewById(R.id.mechanics);
         button8 = (Button) findViewById(R.id.threedvectors);
         button9 = (Button) findViewById(R.id.twodvectors);
+        button10 = (Button) findViewById(R.id.buttonKinematics5);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +89,12 @@ public class HomePage extends AppCompatActivity {
                 openTwoDVectorsActivity();
             }
         });
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHarmonicsActivity();
+            }
+        });
     }
 
     public void openOpticsActivity() {
@@ -133,5 +141,9 @@ public class HomePage extends AppCompatActivity {
     public void openTwoDVectorsActivity() {
         Intent opener9 = new Intent(this, TwoDVectors.class);
         startActivity(opener9);
+    }
+    public void openHarmonicsActivity() {
+        Intent opener10 = new Intent(this, Harmonics.class);
+        startActivity(opener10);
     }
 }
