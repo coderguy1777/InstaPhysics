@@ -1,4 +1,4 @@
-package com.example.lolzk.instaphysicss.dummy;
+package com.example.lolzk.instaphysicss.ParticlePhysicsFormulas;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +17,15 @@ public class DummyContent {
         addItem(new DummyItem("2", "Decay Constant","Decay Constant is"));
         addItem(new DummyItem("3", "Effective Dose","Effective Dose is"));
         addItem(new DummyItem("4", "Bateman's Equations","Bateman's Equations are"));
+        addItem(new DummyItem("5", "Radiation Flux", "Radiation flux is the"));
+        addItem(new DummyItem("6", "Mott Scattering","Mott Scattering employs the"));
+        addItem(new DummyItem("7", "Strong Force", "Strong force is the force"));
+        addItem(new DummyItem("8", "Electroweak Interaction", "Electroweak Interaction is the"));
+        addItem(new DummyItem("9", "Breit-Weigner Formula", "The Breit-Weigner Formula defines"));
+        addItem(new DummyItem("10", "Born Scattering", "Born Scattering is when"));
+        addItem(new DummyItem("11", "Decay Rate", "Decay Rate defines the rate of"));
+        addItem(new DummyItem("12", "Nuclear Binding Energy", "Nuclear Binding Energy is"));
+        addItem(new DummyItem("13", "Number of Atoms", "Finding the Formula for the Number of Atoms works by"));
     }
 
     private static void addItem(DummyItem item) {
